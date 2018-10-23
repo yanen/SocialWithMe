@@ -10,10 +10,17 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class memoriesCollectionViewController: UICollectionViewController {
-
+var names = [""]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if(isKeyPresentInUserDefaults(key: "finished")){
+            print(UserDefaults.standard.array(forKey: "finished"))
+            names = UserDefaults.standard.array(forKey: "finished") as! [String]
+            self.collectionView.reloadData()
+        }else{
+            UserDefaults.standard.set([String](), forKey: "finished")
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,16 +49,21 @@ class memoriesCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 3
+        return names.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell2
     cell.imageview.image = UIImage(named: "test.jpg")
-        cell.label.text = "Playing majong with friends"
+        cell.label.text = names[indexPath.row]
         // Configure the cell
     
         return cell
+    }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        names = UserDefaults.standard.array(forKey: "finished") as! [String]
+        UserDefaults.standard.set(names[indexPath.row], forKey: "selectedmememory")
+        
     }
 
     // MARK: UICollectionViewDelegate
@@ -84,5 +96,7 @@ class memoriesCollectionViewController: UICollectionViewController {
     
     }
     */
-
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
 }

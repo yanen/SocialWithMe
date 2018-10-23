@@ -193,7 +193,7 @@
         <!--Playing majong with friends-->
         <scene sceneID="cdV-mM-nTW">
             <objects>
-                <viewController title="Playing majong with friends" id="7Li-Wh-O8U" sceneMemberID="viewController">
+                <viewController title="Playing majong with friends" id="7Li-Wh-O8U" customClass="memeoryViewController" customModule="innofest2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKp-T7-LEe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +222,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zdr-8y-rax"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="aj1-PB-v7H" id="XJ1-xQ-3WF"/>
+                        <outlet property="textview" destination="Hbv-jk-nky" id="hbu-Pq-9Kf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Pg-aT-f3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -367,8 +371,32 @@
                                             <constraint firstItem="757-ad-8fk" firstAttribute="height" secondItem="j1N-vS-CXc" secondAttribute="height" id="qfq-cg-knZ"/>
                                         </constraints>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="96" id="lfg-yl-1CF">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lfg-yl-1CF" id="eks-KO-uWd">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="95.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQD-IJ-sks">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eQD-IJ-sks" firstAttribute="top" secondItem="eks-KO-uWd" secondAttribute="top" id="Bwk-E9-fmr"/>
+                                                <constraint firstItem="eQD-IJ-sks" firstAttribute="leading" secondItem="eks-KO-uWd" secondAttribute="leading" id="SdA-qj-6tB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="eQD-IJ-sks" firstAttribute="width" secondItem="lfg-yl-1CF" secondAttribute="width" id="Tkf-B3-JSE"/>
+                                            <constraint firstItem="eQD-IJ-sks" firstAttribute="height" secondItem="lfg-yl-1CF" secondAttribute="height" id="nU4-vo-nrF"/>
+                                        </constraints>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="167" id="jPB-JB-ymb">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="167"/>
+                                        <rect key="frame" x="0.0" y="396" width="375" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPB-JB-ymb" id="fox-tX-Qw7">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="166.5"/>
@@ -494,7 +522,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQh-AL-XGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2717.5999999999999" y="43.628185907046479"/>
+            <point key="canvasLocation" x="2753" y="858"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ggt-mr-yBI">
@@ -533,11 +561,41 @@
                     </view>
                     <connections>
                         <outlet property="imageview" destination="D5K-An-Lsf" id="eng-aX-oc9"/>
+                        <segue destination="v9C-hD-0WS" kind="show" identifier="map" id="Zr8-4j-4Ve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAt-SS-EQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2695.1999999999998" y="-627.4362818590705"/>
+        </scene>
+        <!--People around you-->
+        <scene sceneID="pm7-9x-pcS">
+            <objects>
+                <viewController title="People around you" id="v9C-hD-0WS" customClass="mapViewController" customModule="innofest2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdY-u6-zjV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bi-wy-OGO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3bi-wy-OGO" firstAttribute="height" secondItem="rdY-u6-zjV" secondAttribute="height" id="ODP-7z-NaA"/>
+                            <constraint firstItem="3bi-wy-OGO" firstAttribute="leading" secondItem="rdY-u6-zjV" secondAttribute="leading" id="aGi-8P-Ij9"/>
+                            <constraint firstItem="3bi-wy-OGO" firstAttribute="width" secondItem="rdY-u6-zjV" secondAttribute="width" id="rCR-Ix-7kX"/>
+                            <constraint firstItem="3bi-wy-OGO" firstAttribute="top" secondItem="drD-8w-nYa" secondAttribute="top" id="xwY-77-6I0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="drD-8w-nYa"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapkit" destination="3bi-wy-OGO" id="0IV-nG-dp3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqm-ra-lsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3456.8000000000002" y="-631.0344827586207"/>
         </scene>
     </scenes>
     <resources>
