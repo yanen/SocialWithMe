@@ -10,10 +10,11 @@ import UIKit
 import SCLAlertView
 class ViewController: UIViewController {
     @IBOutlet var imageview: UIImageView!
-    
+    var hi = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Go for a walk"
+        var hi = UserDefaults.standard.string(forKey: "selected")
+        self.title = hi
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -23,6 +24,10 @@ class ViewController: UIViewController {
         )
         let alertView = SCLAlertView(appearance: appearance)
         alertView.addButton("Done") {
+            var array = UserDefaults.standard.array(forKey: "tasks")
+            print(array)
+  UserDefaults.standard.integer(forKey: "selectedrow")), forKey: "tasks")
+            print(array?.remove(at: UserDefaults.standard.integer(forKey: "selectedrow")))
             self.navigationController?.popToRootViewController(animated: true)
         }
         alertView.showSuccess("Good Job", subTitle: "You are the best")

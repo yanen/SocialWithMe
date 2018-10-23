@@ -29,11 +29,11 @@
 		FE3EBF8D217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */; };
 		FE3EBF8F217EFFD100AAEF28 /* shopCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */; };
 		FE3EBF91217F00C100AAEF28 /* poop.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF90217F00BE00AAEF28 /* poop.png */; };
-		FE3EBFA3217F044C00AAEF28 /* Mahjong.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF9E217F044C00AAEF28 /* Mahjong.png */; };
-		FE3EBFA4217F044C00AAEF28 /* Walk in the park.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF9F217F044C00AAEF28 /* Walk in the park.png */; };
-		FE3EBFA5217F044C00AAEF28 /* Karaoke.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFA0217F044C00AAEF28 /* Karaoke.png */; };
-		FE3EBFA6217F044C00AAEF28 /* Read.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFA1217F044C00AAEF28 /* Read.png */; };
-		FE3EBFA7217F044C00AAEF28 /* Dance.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFA2217F044C00AAEF28 /* Dance.png */; };
+		FE3EBFAF217F0B7E00AAEF28 /* Mahjong.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFAA217F0B7D00AAEF28 /* Mahjong.png */; };
+		FE3EBFB0217F0B7E00AAEF28 /* Walk in the park.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFAB217F0B7D00AAEF28 /* Walk in the park.png */; };
+		FE3EBFB1217F0B7E00AAEF28 /* Karaoke.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFAC217F0B7D00AAEF28 /* Karaoke.png */; };
+		FE3EBFB2217F0B7E00AAEF28 /* Read.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFAD217F0B7D00AAEF28 /* Read.png */; };
+		FE3EBFB3217F0B7E00AAEF28 /* Dance.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFAE217F0B7E00AAEF28 /* Dance.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,11 +88,11 @@
 		FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo on 23-10-18 at 2.42 PM.jpg"; sourceTree = "<group>"; };
 		FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopCollectionViewController.swift; sourceTree = "<group>"; };
 		FE3EBF90217F00BE00AAEF28 /* poop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poop.png; sourceTree = "<group>"; };
-		FE3EBF9E217F044C00AAEF28 /* Mahjong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mahjong.png; sourceTree = "<group>"; };
-		FE3EBF9F217F044C00AAEF28 /* Walk in the park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Walk in the park.png"; sourceTree = "<group>"; };
-		FE3EBFA0217F044C00AAEF28 /* Karaoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Karaoke.png; sourceTree = "<group>"; };
-		FE3EBFA1217F044C00AAEF28 /* Read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Read.png; sourceTree = "<group>"; };
-		FE3EBFA2217F044C00AAEF28 /* Dance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dance.png; sourceTree = "<group>"; };
+		FE3EBFAA217F0B7D00AAEF28 /* Mahjong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mahjong.png; sourceTree = "<group>"; };
+		FE3EBFAB217F0B7D00AAEF28 /* Walk in the park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Walk in the park.png"; sourceTree = "<group>"; };
+		FE3EBFAC217F0B7D00AAEF28 /* Karaoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Karaoke.png; sourceTree = "<group>"; };
+		FE3EBFAD217F0B7D00AAEF28 /* Read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Read.png; sourceTree = "<group>"; };
+		FE3EBFAE217F0B7E00AAEF28 /* Dance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dance.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,11 +189,11 @@
 				FE3EBF8A217EF30500AAEF28 /* class.png */,
 				FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */,
 				FE3EBF90217F00BE00AAEF28 /* poop.png */,
-				FE3EBF9E217F044C00AAEF28 /* Mahjong.png */,
-				FE3EBF9F217F044C00AAEF28 /* Walk in the park.png */,
-				FE3EBFA0217F044C00AAEF28 /* Karaoke.png */,
-				FE3EBFA1217F044C00AAEF28 /* Read.png */,
-				FE3EBFA2217F044C00AAEF28 /* Dance.png */,
+				FE3EBFAA217F0B7D00AAEF28 /* Mahjong.png */,
+				FE3EBFAB217F0B7D00AAEF28 /* Walk in the park.png */,
+				FE3EBFAC217F0B7D00AAEF28 /* Karaoke.png */,
+				FE3EBFAD217F0B7D00AAEF28 /* Read.png */,
+				FE3EBFAE217F0B7E00AAEF28 /* Dance.png */,
 			);
 			path = innofest2018;
 			sourceTree = "<group>";
@@ -329,17 +329,17 @@
 				FE3EBF91217F00C100AAEF28 /* poop.png in Resources */,
 				FE3EBF8B217EF30500AAEF28 /* class.png in Resources */,
 				FE3EBF83217EDC1300AAEF28 /* download.jpeg in Resources */,
-				FE3EBFA6217F044C00AAEF28 /* Read.png in Resources */,
+				FE3EBFB2217F0B7E00AAEF28 /* Read.png in Resources */,
 				FE3EBF8D217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg in Resources */,
 				FE3EBF7F217ED0DE00AAEF28 /* download.png in Resources */,
 				FE3EBF85217EDE0000AAEF28 /* abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png in Resources */,
-				FE3EBFA5217F044C00AAEF28 /* Karaoke.png in Resources */,
-				FE3EBFA3217F044C00AAEF28 /* Mahjong.png in Resources */,
+				FE3EBFB1217F0B7E00AAEF28 /* Karaoke.png in Resources */,
+				FE3EBFAF217F0B7E00AAEF28 /* Mahjong.png in Resources */,
 				FE3EBF79217ECA6C00AAEF28 /* test.jpg in Resources */,
-				FE3EBFA7217F044C00AAEF28 /* Dance.png in Resources */,
+				FE3EBFB3217F0B7E00AAEF28 /* Dance.png in Resources */,
 				FE3EBF48217DF29300AAEF28 /* Assets.xcassets in Resources */,
 				FE3EBF46217DF29200AAEF28 /* Main.storyboard in Resources */,
-				FE3EBFA4217F044C00AAEF28 /* Walk in the park.png in Resources */,
+				FE3EBFB0217F0B7E00AAEF28 /* Walk in the park.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

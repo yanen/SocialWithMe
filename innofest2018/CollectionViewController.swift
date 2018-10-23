@@ -11,10 +11,19 @@ import UIKit
 private let reuseIdentifier = "cell"
 
 class CollectionViewController: UICollectionViewController {
+    
     var imagenames:[String] = ["Mahjong","Walk in the park","Karaoke","Read","Dance"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if(isKeyPresentInUserDefaults(key: "tasks")){
+            print(UserDefaults.standard.array(forKey: "tasks"))
+           imagenames = UserDefaults.standard.array(forKey: "tasks") as! [String]
+            self.collectionView.reloadData()
+        }else{
+            UserDefaults.standard.set(["Mahjong","Walk in the park","Karaoke","Read","Dance"], forKey: "tasks")
+        }
+        
+collectionView.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right:20)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,9 +31,7 @@ class CollectionViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
     }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 100, left: 50, bottom: 0, right: 100)
-    }
+    
     /*
     // MARK: - Navigation
 
@@ -45,7 +52,7 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 5
+        return imagenames.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -57,7 +64,10 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected" + String(indexPath.row))
+        print("Selected " + imagenames[indexPath.row])
+        UserDefaults.standard.set(imagenames[indexPath.row], forKey: "selected")
+        UserDefaults.standard.set(indexPath.row + 1, forKey: "selectedrow")
+        
     }
     // MARK: UICollectionViewDelegate
 
@@ -95,5 +105,8 @@ class CollectionViewController: UICollectionViewController {
     
     }
     */
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
 
 }
