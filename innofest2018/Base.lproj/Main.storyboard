@@ -176,6 +176,7 @@
                                 <connections>
                                     <outlet property="imageview" destination="AaR-O1-63Z" id="D5c-PS-xeg"/>
                                     <outlet property="label" destination="MVE-2K-s0S" id="OgP-hk-OFQ"/>
+                                    <segue destination="7Li-Wh-O8U" kind="show" id="SjW-aw-52t"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -188,6 +189,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLW-iQ-9fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1951.2" y="-1665.5172413793105"/>
+        </scene>
+        <!--Playing majong with friends-->
+        <scene sceneID="cdV-mM-nTW">
+            <objects>
+                <viewController title="Playing majong with friends" id="7Li-Wh-O8U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eKp-T7-LEe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAz-Wl-UZu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aj1-PB-v7H">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Majong is very fun and not at all very bad.I enjoy having fun with my not-friends,it was so &quot;fun&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hbv-jk-nky">
+                                        <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZAz-Wl-UZu" firstAttribute="height" secondItem="zdr-8y-rax" secondAttribute="height" id="FTh-e2-I4L"/>
+                            <constraint firstItem="ZAz-Wl-UZu" firstAttribute="width" secondItem="zdr-8y-rax" secondAttribute="width" id="bAR-Oo-0wm"/>
+                            <constraint firstItem="ZAz-Wl-UZu" firstAttribute="centerX" secondItem="zdr-8y-rax" secondAttribute="centerX" id="p1o-V6-l5N"/>
+                            <constraint firstItem="ZAz-Wl-UZu" firstAttribute="centerY" secondItem="zdr-8y-rax" secondAttribute="centerY" id="rAg-4Q-GSi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zdr-8y-rax"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pg-aT-f3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="-1665.5172413793105"/>
         </scene>
         <!--What do you want to do today?-->
         <scene sceneID="0JO-nf-BZT">
@@ -329,6 +367,33 @@
                                             <constraint firstItem="757-ad-8fk" firstAttribute="height" secondItem="j1N-vS-CXc" secondAttribute="height" id="qfq-cg-knZ"/>
                                         </constraints>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="167" id="jPB-JB-ymb">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPB-JB-ymb" id="fox-tX-Qw7">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="166.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1b-BS-i4C">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g1b-BS-i4C" firstAttribute="top" secondItem="fox-tX-Qw7" secondAttribute="top" id="2Ne-MV-lvz"/>
+                                                <constraint firstItem="g1b-BS-i4C" firstAttribute="leading" secondItem="fox-tX-Qw7" secondAttribute="leading" id="Vkl-55-QN6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="g1b-BS-i4C" firstAttribute="width" secondItem="jPB-JB-ymb" secondAttribute="width" id="FjY-Jg-f74"/>
+                                            <constraint firstItem="g1b-BS-i4C" firstAttribute="height" secondItem="jPB-JB-ymb" secondAttribute="height" id="LlU-0D-d2m"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="0zm-H3-dQn" kind="show" id="oRi-xx-LEH"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -341,6 +406,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9h4-8v-CbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1887.2" y="8.5457271364317844"/>
+        </scene>
+        <!--Redeem-->
+        <scene sceneID="Xs0-63-cq6">
+            <objects>
+                <collectionViewController title="Redeem" id="0zm-H3-dQn" customClass="shopCollectionViewController" customModule="innofest2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gci-WL-POf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8H5-jb-AYP">
+                            <size key="itemSize" width="320" height="500"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="jR2-89-vH1" customClass="CollectionViewCell3" customModule="innofest2018" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="51.5" width="320" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mystical Poop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeL-nd-IY9">
+                                            <rect key="frame" x="0.0" y="68" width="320" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem for only 10^1000 poiints!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0C-Tu-ccP">
+                                            <rect key="frame" x="0.0" y="240" width="320" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jto-gI-WTS">
+                                            <rect key="frame" x="32" y="113" width="256" height="119"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hai-f4-Bb6">
+                                            <rect key="frame" x="0.0" y="277" width="320" height="158"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Its the best poop in the land,makes you stronger and levels you up to level 10000000000 and posseses mystical properties.Eating it will give you enchanced agility and strength making you into a super human.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to redeem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IV-bV-wex">
+                                            <rect key="frame" x="0.0" y="459" width="320" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="7IV-bV-wex" firstAttribute="top" secondItem="Hai-f4-Bb6" secondAttribute="bottom" constant="24" id="2WK-Ws-Lcd"/>
+                                    <constraint firstItem="yeL-nd-IY9" firstAttribute="trailing" secondItem="e0C-Tu-ccP" secondAttribute="trailing" id="3GO-z0-5zu"/>
+                                    <constraint firstItem="e0C-Tu-ccP" firstAttribute="trailing" secondItem="Hai-f4-Bb6" secondAttribute="trailing" id="46h-6e-Gpq"/>
+                                    <constraint firstItem="yeL-nd-IY9" firstAttribute="leading" secondItem="e0C-Tu-ccP" secondAttribute="leading" id="8Pz-YA-cR5"/>
+                                    <constraint firstItem="yeL-nd-IY9" firstAttribute="top" secondItem="jR2-89-vH1" secondAttribute="topMargin" constant="68" id="EUE-bp-RVX"/>
+                                    <constraint firstItem="Jto-gI-WTS" firstAttribute="top" secondItem="yeL-nd-IY9" secondAttribute="bottom" constant="24" id="HzM-Ya-q9W"/>
+                                    <constraint firstItem="yeL-nd-IY9" firstAttribute="leading" secondItem="jR2-89-vH1" secondAttribute="leading" id="JIS-A7-wud"/>
+                                    <constraint firstItem="e0C-Tu-ccP" firstAttribute="leading" secondItem="Hai-f4-Bb6" secondAttribute="leading" id="NN7-wc-4aD"/>
+                                    <constraint firstItem="e0C-Tu-ccP" firstAttribute="top" secondItem="Jto-gI-WTS" secondAttribute="bottom" constant="8" symbolic="YES" id="NYk-wR-twm"/>
+                                    <constraint firstItem="Jto-gI-WTS" firstAttribute="leading" secondItem="jR2-89-vH1" secondAttribute="leadingMargin" constant="16" id="PZo-v1-dBl"/>
+                                    <constraint firstItem="e0C-Tu-ccP" firstAttribute="centerY" secondItem="jR2-89-vH1" secondAttribute="centerY" id="Q9O-nE-JZc"/>
+                                    <constraint firstItem="Hai-f4-Bb6" firstAttribute="trailing" secondItem="7IV-bV-wex" secondAttribute="trailing" id="c5C-xB-Ae5"/>
+                                    <constraint firstItem="Hai-f4-Bb6" firstAttribute="leading" secondItem="7IV-bV-wex" secondAttribute="leading" id="hS7-dH-emS"/>
+                                    <constraint firstAttribute="trailing" secondItem="yeL-nd-IY9" secondAttribute="trailing" id="kMj-qV-NRk"/>
+                                    <constraint firstItem="Jto-gI-WTS" firstAttribute="centerX" secondItem="e0C-Tu-ccP" secondAttribute="centerX" id="l9w-ua-Bgd"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="7IV-bV-wex" secondAttribute="bottom" constant="20" id="uhw-K5-uF0"/>
+                                    <constraint firstItem="Hai-f4-Bb6" firstAttribute="top" secondItem="e0C-Tu-ccP" secondAttribute="bottom" constant="16" id="ybT-nh-Lbk"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image" destination="Jto-gI-WTS" id="7cX-us-wLW"/>
+                                    <outlet property="pointsrequired" destination="e0C-Tu-ccP" id="r5W-T4-gJf"/>
+                                    <outlet property="textview" destination="Hai-f4-Bb6" id="W3N-2y-xhq"/>
+                                    <outlet property="title" destination="yeL-nd-IY9" id="dKm-9X-Ofp"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="0zm-H3-dQn" id="pQc-lt-OOP"/>
+                            <outlet property="delegate" destination="0zm-H3-dQn" id="er2-vf-D4r"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQh-AL-XGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2717.5999999999999" y="43.628185907046479"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ggt-mr-yBI">
@@ -392,5 +546,6 @@
         <image name="download.jpeg" width="300" height="168"/>
         <image name="download.png" width="178" height="283"/>
         <image name="maxresdefault.jpg" width="1920" height="1080"/>
+        <image name="test.jpg" width="4800" height="3394"/>
     </resources>
 </document>

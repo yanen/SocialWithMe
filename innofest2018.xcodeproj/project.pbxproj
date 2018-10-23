@@ -28,6 +28,8 @@
 		FE3EBF89217EEFC100AAEF28 /* memoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF88217EEFC100AAEF28 /* memoriesCollectionViewController.swift */; };
 		FE3EBF8B217EF30500AAEF28 /* class.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF8A217EF30500AAEF28 /* class.png */; };
 		FE3EBF8D217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */; };
+		FE3EBF8F217EFFD100AAEF28 /* shopCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */; };
+		FE3EBF91217F00C100AAEF28 /* poop.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF90217F00BE00AAEF28 /* poop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		FE3EBF88217EEFC100AAEF28 /* memoriesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		FE3EBF8A217EF30500AAEF28 /* class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class.png; sourceTree = "<group>"; };
 		FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo on 23-10-18 at 2.42 PM.jpg"; sourceTree = "<group>"; };
+		FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopCollectionViewController.swift; sourceTree = "<group>"; };
+		FE3EBF90217F00BE00AAEF28 /* poop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 				FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */,
 				FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */,
 				FE3EBF44217DF29200AAEF28 /* Main.storyboard */,
+				FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */,
 				FE3EBF88217EEFC100AAEF28 /* memoriesCollectionViewController.swift */,
 				FE3EBF47217DF29300AAEF28 /* Assets.xcassets */,
 				FE3EBF49217DF29300AAEF28 /* LaunchScreen.storyboard */,
@@ -176,6 +181,7 @@
 				FE3EBF86217EDE9000AAEF28 /* card.png */,
 				FE3EBF8A217EF30500AAEF28 /* class.png */,
 				FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */,
+				FE3EBF90217F00BE00AAEF28 /* poop.png */,
 			);
 			path = innofest2018;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				FE3EBF4B217DF29300AAEF28 /* LaunchScreen.storyboard in Resources */,
 				FE3EBF81217EDBBC00AAEF28 /* maxresdefault.jpg in Resources */,
 				FE3EBF87217EDE9000AAEF28 /* card.png in Resources */,
+				FE3EBF91217F00C100AAEF28 /* poop.png in Resources */,
 				FE3EBF8B217EF30500AAEF28 /* class.png in Resources */,
 				FE3EBF83217EDC1300AAEF28 /* download.jpeg in Resources */,
 				FE3EBF8D217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg in Resources */,
@@ -432,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3EBF8F217EFFD100AAEF28 /* shopCollectionViewController.swift in Sources */,
 				FE3EBF7D217ECBC300AAEF28 /* CollectionViewController.swift in Sources */,
 				FE3EBF43217DF29200AAEF28 /* ViewController.swift in Sources */,
 				FE3EBF89217EEFC100AAEF28 /* memoriesCollectionViewController.swift in Sources */,

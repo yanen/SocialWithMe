@@ -17,3 +17,12 @@ class CollectionViewCell2: UICollectionViewCell {
     @IBOutlet var label: UILabel!
     @IBOutlet var imageview: UIImageView!
 }
+class CollectionViewCell3: UICollectionViewCell {
+    @IBOutlet var title: UILabel!
+    @IBOutlet var pointsrequired: UILabel!
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var textview: UITextView!
+    
+    
+
+}
