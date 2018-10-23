@@ -1,5 +1,5 @@
 //
-//  CollectionViewController.swift
+//  memoriesCollectionViewController.swift
 //  innofest2018
 //
 //  Created by Ler Yan En on 23/10/18.
@@ -7,10 +7,9 @@
 //
 
 import UIKit
+private let reuseIdentifier = "Cell"
 
-private let reuseIdentifier = "cell"
-
-class CollectionViewController: UICollectionViewController {
+class memoriesCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,20 +42,18 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 5
+        return 3
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
-    cell.imageview.image = UIImage(named: "card.png")
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell2
+    cell.imageview.image = UIImage(named: "test.jpg")
+        cell.label.text = "Playing majong with friends"
+        // Configure the cell
     
         return cell
     }
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected" + String(indexPath.row))
-    }
+
     // MARK: UICollectionViewDelegate
 
     /*
@@ -72,11 +69,7 @@ class CollectionViewController: UICollectionViewController {
         return true
     }
     */
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let backItem = UIBarButtonItem()
-        backItem.title = "Back"
-        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
-    }
+
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {

@@ -12,3 +12,8 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageview: UIImageView!
     
 }
+class CollectionViewCell2: UICollectionViewCell {
+    
+    @IBOutlet var label: UILabel!
+    @IBOutlet var imageview: UIImageView!
+}
