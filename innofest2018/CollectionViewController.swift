@@ -23,7 +23,7 @@ class CollectionViewController: UICollectionViewController {
             UserDefaults.standard.set(["Mahjong","Walk in the park","Karaoke","Read","Dance"], forKey: "tasks")
         }
         
-collectionView.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right:20)
+collectionView.contentInset = UIEdgeInsets(top: 40, left: 10, bottom: 20, right:10)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -67,6 +67,13 @@ collectionView.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right:
         print("Selected " + imagenames[indexPath.row])
         UserDefaults.standard.set(imagenames[indexPath.row], forKey: "selected")
         UserDefaults.standard.set(indexPath.row + 1, forKey: "selectedrow")
+        let  mainStory = UIStoryboard(name: "Main", bundle: nil)
+        let search = mainStory.instantiateViewController(withIdentifier: "view") as! ViewController
+        UIView.beginAnimations("animation", context: nil)
+        UIView.setAnimationDuration(1.0)
+        self.navigationController!.pushViewController(search, animated: false)
+        UIView.setAnimationTransition(UIView.AnimationTransition.flipFromLeft, for: self.navigationController!.view, cache: false)
+        UIView.commitAnimations()
         
     }
     // MARK: UICollectionViewDelegate

@@ -12,11 +12,18 @@ private let reuseIdentifier = "cell"
 
 class shopCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        SCLAlertView().showError("Redeem error", subTitle: "You do not have enough power to redeem the mystical poop")
+        if(UserDefaults.standard.integer(forKey: "points") < 1500){
+             SCLAlertView().showError("Error", subTitle: "Not enough points,you need 1500 points")
+        }else{
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "points") - 1500, forKey: "points")
+            SCLAlertView().showSuccess("Redeem success", subTitle: "You now have a voucher,it will be in your history at the top right.")
+        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+navigationItem.rightBarButtonItem = UIBarButtonItem(title: "History", style: .plain, target: self, action: #selector(history))
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,7 +31,9 @@ class shopCollectionViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    @objc func history(){
+        self.performSegue(withIdentifier: "history", sender: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -50,10 +59,12 @@ class shopCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell3
-    cell.title.text = "Mystical Poop"
-    cell.textview.text = "Its the best poop in the land,makes you stronger and levels you up to level 10000000000 and posseses mystical properties.Eating it will give you enchanced agility and strength making you into a super human."
-    cell.pointsrequired.text = "Redeem for only 10^1000 poiints!"
-    cell.image.image = UIImage(named: "poop.png")
+    cell.title.text = "$5 voucher"
+    cell.textview.text = "You can use it in cold storage and a lot of participating companies."
+    cell.pointsrequired.text = "Redeem using 1500 points"
+    cell.image.image = UIImage(named: "voucher.jpg")
+        
+    
         // Configure the cell
     
         return cell

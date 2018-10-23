@@ -43,11 +43,12 @@ class ViewController: UIViewController {
             array = UserDefaults.standard.array(forKey: "finished") as! [String]
             array.append(hi!)
               UserDefaults.standard.set(array, forKey: "finished")
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "points") + 100, forKey: "points")
             
             
             self.navigationController?.popToRootViewController(animated: true)
         }
-        alertView.showSuccess("Good Job", subTitle: "You are the best")
+        alertView.showSuccess("Good Job", subTitle: "You are the best.You are awarded 100 points")
         
         // Upon displaying, change/close view
         
