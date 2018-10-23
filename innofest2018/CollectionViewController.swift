@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "cell"
 
 class CollectionViewController: UICollectionViewController {
-
+    var imagenames:[String] = ["Mahjong","Walk in the park","Karaoke","Read","Dance"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +22,9 @@ class CollectionViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 100, left: 50, bottom: 0, right: 100)
+    }
     /*
     // MARK: - Navigation
 
@@ -48,7 +50,7 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
-    cell.imageview.image = UIImage(named: "card.png")
+    cell.imageview.image = UIImage(named: imagenames[indexPath.row] + ".png")
         
     
         return cell
@@ -75,7 +77,9 @@ class CollectionViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
-        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+        navigationItem.backBarButtonItem = backItem
+        
+        // This will show in the next view controller being pushed
     }
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
