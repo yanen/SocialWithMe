@@ -16,6 +16,7 @@
 		FE3EBF61217DF29300AAEF28 /* innofest2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF60217DF29300AAEF28 /* innofest2018UITests.swift */; };
 		FE3EBF79217ECA6C00AAEF28 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF78217ECA6500AAEF28 /* test.jpg */; };
 		FE3EBF7B217ECABB00AAEF28 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */; };
+		FE3EBF7D217ECBC300AAEF28 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FE3EBF62217DF29300AAEF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE3EBF78217ECA6500AAEF28 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				FE3EBF40217DF29200AAEF28 /* AppDelegate.swift */,
 				FE3EBF42217DF29200AAEF28 /* ViewController.swift */,
+				FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */,
 				FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */,
 				FE3EBF44217DF29200AAEF28 /* Main.storyboard */,
 				FE3EBF47217DF29300AAEF28 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3EBF7D217ECBC300AAEF28 /* CollectionViewController.swift in Sources */,
 				FE3EBF43217DF29200AAEF28 /* ViewController.swift in Sources */,
 				FE3EBF41217DF29200AAEF28 /* AppDelegate.swift in Sources */,
 				FE3EBF7B217ECABB00AAEF28 /* CollectionViewCell.swift in Sources */,
