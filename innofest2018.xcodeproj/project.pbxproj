@@ -17,6 +17,7 @@
 		FE3EBF79217ECA6C00AAEF28 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF78217ECA6500AAEF28 /* test.jpg */; };
 		FE3EBF7B217ECABB00AAEF28 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */; };
 		FE3EBF7D217ECBC300AAEF28 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */; };
+		FE3EBF7F217ED0DE00AAEF28 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF7E217ED0DE00AAEF28 /* download.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FE3EBF78217ECA6500AAEF28 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FE3EBF7E217ED0DE00AAEF28 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FE3EBF49217DF29300AAEF28 /* LaunchScreen.storyboard */,
 				FE3EBF4C217DF29300AAEF28 /* Info.plist */,
 				FE3EBF78217ECA6500AAEF28 /* test.jpg */,
+				FE3EBF7E217ED0DE00AAEF28 /* download.png */,
 			);
 			path = innofest2018;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3EBF4B217DF29300AAEF28 /* LaunchScreen.storyboard in Resources */,
+				FE3EBF7F217ED0DE00AAEF28 /* download.png in Resources */,
 				FE3EBF79217ECA6C00AAEF28 /* test.jpg in Resources */,
 				FE3EBF48217DF29300AAEF28 /* Assets.xcassets in Resources */,
 				FE3EBF46217DF29200AAEF28 /* Main.storyboard in Resources */,
