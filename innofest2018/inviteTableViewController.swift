@@ -1,5 +1,5 @@
 //
-//  profileTableViewController.swift
+//  inviteTableViewController.swift
 //  innofest2018
 //
 //  Created by Ler Yan En on 23/10/18.
@@ -8,50 +8,67 @@
 
 import UIKit
 
-class profileTableViewController: UITableViewController {
-    @IBOutlet var points: UILabel!
-    @objc func share(sender:UIView){
-        UIGraphicsBeginImageContext(view.frame.size)
-        view.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        self.tableView.delegate = self
-        let textToShare = "Check out my app,its the best app ever(through the app share function),get free points when you sign up,my referal code is 0707rKV"
-        if let myWebsite = URL(string: "https://www.sst.edu.sg/") {//Enter link to your app here
-            let extractedExpr = #imageLiteral(resourceName: "app-logo")
-            let objectsToShare = [textToShare, myWebsite, image ?? extractedExpr] as [Any]
-            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-            activityVC.popoverPresentationController?.sourceView = sender
-            self.present(activityVC, animated: true, completion: nil)
-        }    }
+class inviteTableViewController: UITableViewController {
+    var array:[String] = []
+    var dict:[String:String] = ["07072004":"Ler Yan En","123456":"Onn kit","ABCDEFG":"Mr Yeo","onn kitty":"Onn kit"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
-        points.text = "Points : " + String(UserDefaults.standard.integer(forKey: "points"))
-        tableView.reloadData()
-navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Share", style: .plain, target: self, action: #selector(share(sender:)))
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    override func viewWillAppear(_ animated: Bool) {
-        points.text = "Points : " + String(UserDefaults.standard.integer(forKey: "points"))
+    @IBAction func add(_ sender: Any) {
+        presentAlert()
+    }
+    func presentAlert() {
+        let alertController = UIAlertController(title: "Invite friend", message: "Please input friend referal code to invite", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
+            if let emailTextField = alertController.textFields?[0] {
+                let name = self.dict[emailTextField.text ?? ""]
+                if(name != nil){
+                    
+                    self.array.append(name ?? "")
+                    self.tableView.reloadData()
+                }
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Referal Code"
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
     }
 
-    // MARK: - Table view data source
-    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return array.count
+    }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+cell.textLabel?.text = array[indexPath.row]
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

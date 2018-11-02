@@ -17,8 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIL.inc™ presents the prototype" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhq-e9-Rc2">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="90ac49b5-793d-48f4-a766-093526a70f40.png" translatesAutoresizingMaskIntoConstraints="NO" id="K8m-4Q-oP3">
+                                <rect key="frame" x="67" y="116" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhq-e9-Rc2">
+                                <rect key="frame" x="0.0" y="68" width="375" height="647"/>
+                                <string key="text">Meheartelderly 
+presents : 
+SocialWithMe prototype</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -27,9 +33,13 @@
                         <color key="backgroundColor" red="0.32549019610000002" green="0.70588235290000001" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xhq-e9-Rc2" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="9S9-ef-sYr"/>
-                            <constraint firstItem="xhq-e9-Rc2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="EhC-i9-scr"/>
+                            <constraint firstItem="K8m-4Q-oP3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Bgd-LJ-4Ou"/>
+                            <constraint firstItem="xhq-e9-Rc2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="48" id="EhC-i9-scr"/>
+                            <constraint firstItem="K8m-4Q-oP3" firstAttribute="centerX" secondItem="xhq-e9-Rc2" secondAttribute="centerX" id="Eim-hF-5qF"/>
+                            <constraint firstItem="K8m-4Q-oP3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="N3k-rd-jU4"/>
                             <constraint firstItem="xhq-e9-Rc2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Sbt-Ib-Shi"/>
                             <constraint firstItem="xhq-e9-Rc2" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="XfP-vB-5xW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K8m-4Q-oP3" secondAttribute="bottom" constant="423" id="nui-f1-yZB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="90ac49b5-793d-48f4-a766-093526a70f40.png" width="200" height="200"/>
+    </resources>
 </document>

@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var imageview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
         let hi = UserDefaults.standard.string(forKey: "selected")
         self.title = hi
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .done, target: self, action: #selector(callmap))

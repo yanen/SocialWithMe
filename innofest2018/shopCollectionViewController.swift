@@ -11,9 +11,11 @@ import SCLAlertView
 private let reuseIdentifier = "cell"
 
 class shopCollectionViewController: UICollectionViewController {
+    var pointvalues = [1500,2800,5700]
+    var titlee = ["$5","$10","$20"]
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if(UserDefaults.standard.integer(forKey: "points") < 1500){
-             SCLAlertView().showError("Error", subTitle: "Not enough points,you need 1500 points")
+        if(UserDefaults.standard.integer(forKey: "points") < pointvalues[indexPath.row]){
+             SCLAlertView().showError("Error", subTitle: "Not enough points,you need \(pointvalues[indexPath.row]) points")
         }else{
             UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "points") - 1500, forKey: "points")
             SCLAlertView().showSuccess("Redeem success", subTitle: "You now have a voucher,it will be in your history at the top right.")
@@ -59,9 +61,9 @@ navigationItem.rightBarButtonItem = UIBarButtonItem(title: "History", style: .pl
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell3
-    cell.title.text = "$5 voucher"
+    cell.title.text = titlee[indexPath.row] + " voucher"
     cell.textview.text = "You can use it in cold storage and a lot of participating companies."
-    cell.pointsrequired.text = "Redeem using 1500 points"
+        cell.pointsrequired.text = "Redeem using \(pointvalues[indexPath.row]) points"
     cell.image.image = UIImage(named: "voucher.jpg")
         
     

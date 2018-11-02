@@ -22,12 +22,10 @@
 		FE3EBF79217ECA6C00AAEF28 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF78217ECA6500AAEF28 /* test.jpg */; };
 		FE3EBF7B217ECABB00AAEF28 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */; };
 		FE3EBF7D217ECBC300AAEF28 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */; };
-		FE3EBF7F217ED0DE00AAEF28 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF7E217ED0DE00AAEF28 /* download.png */; };
 		FE3EBF81217EDBBC00AAEF28 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF80217EDBBC00AAEF28 /* maxresdefault.jpg */; };
 		FE3EBF83217EDC1300AAEF28 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF82217EDC1300AAEF28 /* download.jpeg */; };
 		FE3EBF85217EDE0000AAEF28 /* abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF84217EDE0000AAEF28 /* abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png */; };
 		FE3EBF89217EEFC100AAEF28 /* memoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF88217EEFC100AAEF28 /* memoriesCollectionViewController.swift */; };
-		FE3EBF8B217EF30500AAEF28 /* class.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF8A217EF30500AAEF28 /* class.png */; };
 		FE3EBF8D217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */; };
 		FE3EBF8F217EFFD100AAEF28 /* shopCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */; };
 		FE3EBFAF217F0B7E00AAEF28 /* Mahjong.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFAA217F0B7D00AAEF28 /* Mahjong.png */; };
@@ -39,6 +37,14 @@
 		FE3EBFB7217F271B00AAEF28 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBFB6217F271B00AAEF28 /* mapViewController.swift */; };
 		FE3EBFB9217F4F9700AAEF28 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EBFB8217F4F9000AAEF28 /* cardback.png */; };
 		FE3EBFBF217F530100AAEF28 /* profileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EBFBE217F530100AAEF28 /* profileTableViewController.swift */; };
+		FE8B9130217F73090090F08E /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B912F217F73090090F08E /* eventsViewController.swift */; };
+		FE8B9132217F76420090F08E /* inviteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9131217F76420090F08E /* inviteTableViewController.swift */; };
+		FE8B9134217F87C90090F08E /* 90ac49b5-793d-48f4-a766-093526a70f40.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8B9133217F87C90090F08E /* 90ac49b5-793d-48f4-a766-093526a70f40.png */; };
+		FE8B913D217F8AB00090F08E /* redeem_black_192x192.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8B9139217F8AAF0090F08E /* redeem_black_192x192.png */; };
+		FE8B913E217F8AB00090F08E /* interests.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8B913A217F8AAF0090F08E /* interests.png */; };
+		FE8B9140217F8AB00090F08E /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8B913C217F8AB00090F08E /* code.png */; };
+		FE8B9142217F8AF00090F08E /* 202-2026485_clan-points-icon-[crown-is-transparency]-vip-roblox-gamepass.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8B9141217F8AEF0090F08E /* 202-2026485_clan-points-icon-[crown-is-transparency]-vip-roblox-gamepass.png */; };
+		FE8B9144217F91D40090F08E /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9143217F91D40090F08E /* ImagePickerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,12 +92,10 @@
 		FE3EBF78217ECA6500AAEF28 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		FE3EBF7E217ED0DE00AAEF28 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		FE3EBF80217EDBBC00AAEF28 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
 		FE3EBF82217EDC1300AAEF28 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		FE3EBF84217EDE0000AAEF28 /* abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png"; sourceTree = "<group>"; };
 		FE3EBF88217EEFC100AAEF28 /* memoriesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoriesCollectionViewController.swift; sourceTree = "<group>"; };
-		FE3EBF8A217EF30500AAEF28 /* class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class.png; sourceTree = "<group>"; };
 		FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo on 23-10-18 at 2.42 PM.jpg"; sourceTree = "<group>"; };
 		FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopCollectionViewController.swift; sourceTree = "<group>"; };
 		FE3EBFAA217F0B7D00AAEF28 /* Mahjong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mahjong.png; sourceTree = "<group>"; };
@@ -102,7 +106,15 @@
 		FE3EBFB4217F1F6D00AAEF28 /* memeoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memeoryViewController.swift; sourceTree = "<group>"; };
 		FE3EBFB6217F271B00AAEF28 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		FE3EBFB8217F4F9000AAEF28 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
-		FE3EBFBE217F530100AAEF28 /* profileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTableViewController.swift; sourceTree = "<group>"; };
+		FE3EBFBE217F530100AAEF28 /* profileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTableViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		FE8B912F217F73090090F08E /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
+		FE8B9131217F76420090F08E /* inviteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inviteTableViewController.swift; sourceTree = "<group>"; };
+		FE8B9133217F87C90090F08E /* 90ac49b5-793d-48f4-a766-093526a70f40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90ac49b5-793d-48f4-a766-093526a70f40.png"; sourceTree = "<group>"; };
+		FE8B9139217F8AAF0090F08E /* redeem_black_192x192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_black_192x192.png; sourceTree = "<group>"; };
+		FE8B913A217F8AAF0090F08E /* interests.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interests.png; sourceTree = "<group>"; };
+		FE8B913C217F8AB00090F08E /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		FE8B9141217F8AEF0090F08E /* 202-2026485_clan-points-icon-[crown-is-transparency]-vip-roblox-gamepass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "202-2026485_clan-points-icon-[crown-is-transparency]-vip-roblox-gamepass.png"; sourceTree = "<group>"; };
+		FE8B9143217F91D40090F08E /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,26 +193,28 @@
 		FE3EBF3F217DF29200AAEF28 /* innofest2018 */ = {
 			isa = PBXGroup;
 			children = (
+				FE8B9131217F76420090F08E /* inviteTableViewController.swift */,
 				FE3EBF40217DF29200AAEF28 /* AppDelegate.swift */,
 				FE3EBF42217DF29200AAEF28 /* ViewController.swift */,
 				FE3EBF7C217ECBC300AAEF28 /* CollectionViewController.swift */,
 				FE3EBF7A217ECABB00AAEF28 /* CollectionViewCell.swift */,
 				FE3EBF44217DF29200AAEF28 /* Main.storyboard */,
+				FE8B912F217F73090090F08E /* eventsViewController.swift */,
 				FE3EBFB6217F271B00AAEF28 /* mapViewController.swift */,
 				FE3EBFB4217F1F6D00AAEF28 /* memeoryViewController.swift */,
+				FE8B9143217F91D40090F08E /* ImagePickerManager.swift */,
 				FE3EBF8E217EFFD100AAEF28 /* shopCollectionViewController.swift */,
 				FE3EBF88217EEFC100AAEF28 /* memoriesCollectionViewController.swift */,
 				FE3EBFBE217F530100AAEF28 /* profileTableViewController.swift */,
 				FE3EBF47217DF29300AAEF28 /* Assets.xcassets */,
 				FE3EBF49217DF29300AAEF28 /* LaunchScreen.storyboard */,
 				FE3EBF4C217DF29300AAEF28 /* Info.plist */,
+				FE8B9133217F87C90090F08E /* 90ac49b5-793d-48f4-a766-093526a70f40.png */,
 				FE30345E217F5FD1008E6D66 /* upload.png */,
 				FE3EBF78217ECA6500AAEF28 /* test.jpg */,
-				FE3EBF7E217ED0DE00AAEF28 /* download.png */,
 				FE3EBF80217EDBBC00AAEF28 /* maxresdefault.jpg */,
 				FE3EBF82217EDC1300AAEF28 /* download.jpeg */,
 				FE3EBF84217EDE0000AAEF28 /* abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png */,
-				FE3EBF8A217EF30500AAEF28 /* class.png */,
 				FE3EBF8C217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg */,
 				FE3EBFAA217F0B7D00AAEF28 /* Mahjong.png */,
 				FE3EBFAB217F0B7D00AAEF28 /* Walk in the park.png */,
@@ -209,6 +223,10 @@
 				FE3EBFAE217F0B7E00AAEF28 /* Dance.png */,
 				FE3EBFB8217F4F9000AAEF28 /* cardback.png */,
 				FE303460217F615E008E6D66 /* voucher.jpg */,
+				FE8B913C217F8AB00090F08E /* code.png */,
+				FE8B913A217F8AAF0090F08E /* interests.png */,
+				FE8B9139217F8AAF0090F08E /* redeem_black_192x192.png */,
+				FE8B9141217F8AEF0090F08E /* 202-2026485_clan-points-icon-[crown-is-transparency]-vip-roblox-gamepass.png */,
 			);
 			path = innofest2018;
 			sourceTree = "<group>";
@@ -339,21 +357,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE8B9142217F8AF00090F08E /* 202-2026485_clan-points-icon-[crown-is-transparency]-vip-roblox-gamepass.png in Resources */,
 				FE303461217F615E008E6D66 /* voucher.jpg in Resources */,
 				FE3EBF4B217DF29300AAEF28 /* LaunchScreen.storyboard in Resources */,
 				FE3EBF81217EDBBC00AAEF28 /* maxresdefault.jpg in Resources */,
-				FE3EBF8B217EF30500AAEF28 /* class.png in Resources */,
 				FE3EBF83217EDC1300AAEF28 /* download.jpeg in Resources */,
 				FE3EBFB2217F0B7E00AAEF28 /* Read.png in Resources */,
 				FE30345F217F5FD3008E6D66 /* upload.png in Resources */,
 				FE3EBF8D217EFA9000AAEF28 /* Photo on 23-10-18 at 2.42 PM.jpg in Resources */,
-				FE3EBF7F217ED0DE00AAEF28 /* download.png in Resources */,
+				FE8B9134217F87C90090F08E /* 90ac49b5-793d-48f4-a766-093526a70f40.png in Resources */,
 				FE3EBF85217EDE0000AAEF28 /* abstract-connecting-lines-and-dots-structure-on-dark-blue-background_vqhu_ynfl__F0000.png in Resources */,
 				FE3EBFB9217F4F9700AAEF28 /* cardback.png in Resources */,
+				FE8B913E217F8AB00090F08E /* interests.png in Resources */,
 				FE3EBFB1217F0B7E00AAEF28 /* Karaoke.png in Resources */,
 				FE3EBFAF217F0B7E00AAEF28 /* Mahjong.png in Resources */,
+				FE8B913D217F8AB00090F08E /* redeem_black_192x192.png in Resources */,
 				FE3EBF79217ECA6C00AAEF28 /* test.jpg in Resources */,
 				FE3EBFB3217F0B7E00AAEF28 /* Dance.png in Resources */,
+				FE8B9140217F8AB00090F08E /* code.png in Resources */,
 				FE3EBF48217DF29300AAEF28 /* Assets.xcassets in Resources */,
 				FE3EBF46217DF29200AAEF28 /* Main.storyboard in Resources */,
 				FE3EBFB0217F0B7E00AAEF28 /* Walk in the park.png in Resources */,
@@ -477,10 +498,13 @@
 				FE3EBF7D217ECBC300AAEF28 /* CollectionViewController.swift in Sources */,
 				FE3EBF43217DF29200AAEF28 /* ViewController.swift in Sources */,
 				FE3EBF89217EEFC100AAEF28 /* memoriesCollectionViewController.swift in Sources */,
+				FE8B9132217F76420090F08E /* inviteTableViewController.swift in Sources */,
+				FE8B9130217F73090090F08E /* eventsViewController.swift in Sources */,
 				FE3EBF41217DF29200AAEF28 /* AppDelegate.swift in Sources */,
 				FE3EBFBF217F530100AAEF28 /* profileTableViewController.swift in Sources */,
 				FE3EBF7B217ECABB00AAEF28 /* CollectionViewCell.swift in Sources */,
 				FE3EBFB7217F271B00AAEF28 /* mapViewController.swift in Sources */,
+				FE8B9144217F91D40090F08E /* ImagePickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

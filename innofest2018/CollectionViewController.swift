@@ -15,6 +15,8 @@ class CollectionViewController: UICollectionViewController {
     var imagenames:[String] = ["Mahjong","Walk in the park","Karaoke","Read","Dance"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Memories", style: .plain, target: self, action: #selector(memories))
         if(isKeyPresentInUserDefaults(key: "tasks")){
             print(UserDefaults.standard.array(forKey: "tasks"))
            imagenames = UserDefaults.standard.array(forKey: "tasks") as! [String]
@@ -23,7 +25,7 @@ class CollectionViewController: UICollectionViewController {
             UserDefaults.standard.set(["Mahjong","Walk in the park","Karaoke","Read","Dance"], forKey: "tasks")
         }
         
-collectionView.contentInset = UIEdgeInsets(top: 40, left: 10, bottom: 20, right:10)
+collectionView.contentInset = UIEdgeInsets(top: 40, left: 0, bottom: 20, right:10)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,7 +33,9 @@ collectionView.contentInset = UIEdgeInsets(top: 40, left: 10, bottom: 20, right:
 
         // Do any additional setup after loading the view.
     }
-    
+    @objc func memories(){
+        self.performSegue(withIdentifier: "memo", sender: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -117,3 +121,15 @@ collectionView.contentInset = UIEdgeInsets(top: 40, left: 10, bottom: 20, right:
     }
 
 }
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+

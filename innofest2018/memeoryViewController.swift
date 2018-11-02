@@ -7,19 +7,38 @@
 //
 
 import UIKit
-
-class memeoryViewController: UIViewController {
-    @IBOutlet var image: UIImageView!
+import SCLAlertView
+import FileProvider
+class memeoryViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
+    @IBOutlet var imageview: UIImageView!
     @IBOutlet var textview: UITextView!
-    
+    var imagePicker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
  var hi = UserDefaults.standard.string(forKey: "selectedmememory")
+        if(isKeyPresentInUserDefaults(key: hi!)){
+            var data2 = UserDefaults.standard.data(forKey: hi!)
+            imageview.image = UIImage(data: data2!)
+        }else{
+            
+        }
         
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func importimage(_ sender: Any) {
+        ImagePickerManager().pickImage(self){ image in
+            //here is the image
+            var hi = UserDefaults.standard.string(forKey: "selectedmememory")
+            self.imageview.image = image
+            SCLAlertView().showSuccess("Success", subTitle: "Image successfully imported")
+            let imageData = image.pngData()
+            UserDefaults.standard.set(imageData, forKey: hi ?? "nil")
+            
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -29,5 +48,7 @@ class memeoryViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
 }
