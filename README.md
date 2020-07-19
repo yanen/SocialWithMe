@@ -13,14 +13,14 @@ An app that provides users with suggested activities and nearby possible locatio
 - Scrapbooking function
 - Invite and follow others with similar interests
 - Find others near you
-#Screenshots
+# Screenshots
 ![Screenshot 1](assets/Screenshot_1)
 ![Screenshot 2](assets/Screenshot_2)
 ![Screenshot 3](assets/Screenshot_3)
 ![Screenshot 4](assets/Screenshot_4)
 ![Screenshot 5](assets/Screenshot_5)
 ![Screenshot 6](assets/Screenshot_6)
-#Credits
+# Credits
 Prototype developer and UI designer:Yan En <br/>
 Art:Rhea <br/>
 Fellow teammates:Matthew,Aisyah,Shaun <br/>
