@@ -19,7 +19,7 @@ As this app is an prototype done within 24 hours, some of the features may not h
 ![Screenshot 1](assets/Screenshot_1.png)
 ![Screenshot 2](assets/Screenshot_2.png)
 ![Screenshot 3](assets/Screenshot_3.png)
-![Screenshot 4](assets/Screenshot_4.png)
+![Screenshot 4](assets/Screenshot_4.PNG)
 ![Screenshot 5](assets/Screenshot_5.png)
 ![Screenshot 6](assets/Screenshot_6.png)
 # Credits
