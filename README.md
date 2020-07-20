@@ -14,7 +14,7 @@ An app that provides users with suggested activities and nearby possible locatio
 - Invite and follow others with similar interests
 - Find others near you
 # Note
-As this app is an prototype done within 24 hours, some of the features may not have been implemented like for example the system for redemption of points.The app is also purely offline.
+As this app is an prototype done within 24 hours, some of the features may not have been implemented like for example the system for redemption of points.The app is also purely offline and only serves as an proof of concept for our presentation.
 # Screenshots
 ![Screenshot 1](assets/Screenshot_1.png)
 ![Screenshot 2](assets/Screenshot_2.png)
